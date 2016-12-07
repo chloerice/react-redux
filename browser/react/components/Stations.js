@@ -7,8 +7,10 @@ const DUMMY_STATIONS_DATA = [
   { name: 'Classical' }
 ];
 
-export default function () {
+export default function (props) {
+
   return (
+
     <div>
       <h3>Stations</h3>
       <div className="list-group">
