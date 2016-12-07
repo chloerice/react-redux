@@ -1,7 +1,11 @@
 import React from 'react';
 import AddSong from '../components/AddSong';
-import store from '../store';
+
 import {loadAllSongs, addSongToPlaylist} from '../action-creators/playlists';
+
+
+
+
 
 class AddSongContainer extends React.Component {
 
