@@ -3,17 +3,15 @@ import {connect} from 'react-redux';
 import Stations from '../components/Stations';
 
 function getStations(songs) {
-	let stations = {};
-	songs.map(function(song) {
-		if (stations[song.genre]) {
-			stations[song.genre].push(song);
-		} else {
-			stations[song.genre] =[];
-			stations[song.genre].push(song);
-		}
-	})
 
-	return stations;
+	return songs.reduce(function(stations, song) {
+		if (!stations[song.genre]) {
+			stations[song.genre] = [];
+		}
+		stations[song.genre].push(song);
+
+		return stations;
+	}, {})
 }
 
 function mapStateToProps(state) {
