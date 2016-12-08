@@ -2,7 +2,6 @@ import React, {Component} from 'react';
 import {connect} from 'react-redux';
 import Stations from '../components/Stations';
 
-
 function getStations(songs) {
 	let stations = {};
 	songs.map(function(song) {

@@ -6,7 +6,7 @@ export default function (props) {
   const currentSong = props.currentSong;
   const isPlaying = props.isPlaying;
   const toggle = props.toggleOne;
-
+  console.log("Here's our songs in the Songs component!", songs);
   return (
     <table className='table'>
       <thead>
