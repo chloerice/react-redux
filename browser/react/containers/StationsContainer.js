@@ -22,7 +22,6 @@ function mapStateToProps(state) {
 
 function mapDispatchToProps(dispatch) {
 	return {};
-
 }
 
 const StationsContainer = connect(
