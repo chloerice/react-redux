@@ -4,8 +4,9 @@ import {connect} from 'react-redux';
 import {searchLyrics} from '../action-creators/lyrics';
 
 function mapStateToProps(state, ownProps) {
+  console.log(state)
   return {
-    artistQuery: ownProps.artistQuery,
+    artistQuery: state.lyrics.artistQuery,
     songQuery: ownProps.songQuery
   }
 }
